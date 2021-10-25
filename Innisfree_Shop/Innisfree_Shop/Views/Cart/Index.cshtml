@@ -1,0 +1,70 @@
+﻿@model List<Innisfree_Shop.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+    <script src="~/Assets/client/js/Controller/cartController.js"></script>
+}
+<div class="w3l-ecommerce-main-inn">
+    <div class="ecomrhny-content-inf py-5">
+        <div class="container py-lg-5">
+            <div class="ecommerce-grids row">
+                <div class="ecommerce-right-hny col-lg-12">
+                    <div class="row ecomhny-topbar">
+                        <div class="col-6 ecomhny-result">
+                            <h2 class="ecomhny-result-count"> Giỏ hàng</h2>
+                        </div>
+
+                    </div>
+                    <div class="ecom-products-grids row">
+                        @if (Model.Count > 0)
+                        {
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td> MÃ SP</td>
+                                        <td> Tên SP</td>
+                                        <td> Ảnh SP</td>
+                                        <td> Số lượng</td>
+                                        <td> Đơn giá</td>
+                                        <td>Thành tiền</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td> @item.Product.ID</td>
+                                            <td> @item.Product.Name</td>
+                                            <td> <img src="@item.Product.Image" width="100" /></td>
+                                            <td><input type="text" class="txtQuantity" data-id="@item.Product.ID" value="@item.Quantity" /></td>
+                                            <td> @item.Product.Price.GetValueOrDefault(0).ToString("N0")</td>
+                                            <td>@((item.Product.Price.GetValueOrDefault(0) * item.Quantity).ToString("N0"))</td>
+                                            <td><a href="#" data-id="@item.Product.ID" class="btn-delete"> Xóa </a></td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                            <div style="display:flex; justify-content:space-between;">
+                                <button id="btnContinue" class="transmitv-cart ptransmitv-cart add-to-cart read-2">Tiếp tục mua hàng</button>
+                                <button id="btnUpdate" class="transmitv-cart ptransmitv-cart add-to-cart read-2">Cập nhật giỏ hàng</button>
+                                <button id="btnDeleteAll" class="transmitv-cart ptransmitv-cart add-to-cart read-2">Xóa giỏ hàng</button>
+                                <button id="btnPayment" class="transmitv-cart ptransmitv-cart add-to-cart read-2">Thanh toán</button>
+                            </div>
+                            
+                        }
+                        else
+                        {
+                            <span class="alert alert-danger" style="font-size:1.4rem">Chưa có sản phẩm nào trong giỏ hàng</span>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

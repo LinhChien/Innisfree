@@ -1,0 +1,30 @@
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\Common.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\Common.pdb
+C:\Users\dell\source\repos\Innisfree_Shop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\dell\source\repos\Innisfree_Shop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Innisfree_Shop\Common\obj\Debug\Common.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\obj\Debug\Common.pdb
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.AccessControl.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.Permissions.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.AccessControl.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.Permissions.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Common\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Common\obj\Debug\Common.csproj.CopyComplete
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\Common.dll
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\Common.pdb
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.AccessControl.dll
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.Permissions.dll
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.Principal.Windows.dll
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.AccessControl.xml
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.Permissions.xml
+D:\đồ án 1\Innisfree_Shop\Common\bin\Debug\System.Security.Principal.Windows.xml
+D:\đồ án 1\Innisfree_Shop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\đồ án 1\Innisfree_Shop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\đồ án 1\Innisfree_Shop\Common\obj\Debug\Common.csproj.CopyComplete
+D:\đồ án 1\Innisfree_Shop\Common\obj\Debug\Common.dll
+D:\đồ án 1\Innisfree_Shop\Common\obj\Debug\Common.pdb

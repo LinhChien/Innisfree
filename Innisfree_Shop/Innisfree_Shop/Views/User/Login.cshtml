@@ -1,0 +1,64 @@
+﻿@model Innisfree_Shop.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="w3l-ecommerce-main-inn">
+        <div class="ecomrhny-content-inf py-5">
+            <div class="container py-lg-5">
+                <div class="ecommerce-grids row">
+                    @using (Html.BeginForm(""))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="ecommerce-right-hny col-lg-12">
+                            <div class="row ecomhny-topbar">
+                                <div class="col-6 ecomhny-result">
+                                    <h2 class="ecomhny-result-count"> Đăng nhập</h2>
+                                </div>
+
+                            </div>
+                            <div class="ecom-products-grids row">
+                                <div class="form-group col-12">
+                                    <div class="col-md-10">
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group col-12">
+                                    @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-7">
+                                        @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                                    <div class="col-md-7">
+                                        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-12">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <input style="background-color: #ff7315; color: white;" type="submit" value="Đăng nhập" class="btn btn-default" />
+                                        <a class="btn btn-facebook" href="/User/LoginFacebook" style="background-color: #4267b2; color: white;">
+                                            <i class="fa fa-facebook"></i>
+                                            Đăng nhập bằng facebook
+                                        </a>
+                                        <a class="btn " href="/Admin/Login/index" style="background-color: #ff7315; color: white;">Đăng nhập Admin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+

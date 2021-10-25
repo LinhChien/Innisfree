@@ -1,0 +1,145 @@
+﻿@model Model.EF.Product
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var category = (Model.EF.ProductCategory)ViewBag.Category;
+    var relatedProducts = (List<Model.EF.Product>)ViewBag.RelatedProducts;
+}
+
+<section class="w3l-ecommerce-main-inn">
+    <!--/ecommerce-single-->
+    <div class="ecomrhny-content-inf py-5">
+        <div class="container py-lg-5">
+           
+            <!--/row1-->
+            <div class="sp-store-single-page row">
+                <div class="col-lg-5 single-right-left">
+                    <div class="flexslider1">
+
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                            <a class="thumb-image" href="#" target="_blank"><img class="clone" style="width: 400px; float: left; display: block;" src="@Model.Image" alt=" " /></a>
+                        </div>
+                    </div>
+                    <div class="eco-buttons mt-5">
+
+                        <div class="transmitv single-item">
+                            <form action="#" method="post">
+                                
+                                <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart read-2">
+                                    <a href="/them-gio-hang?productId=@Model.ID&quantity=1" data-tip="Add to Cart" class="btn" style="color: white; font-size: 1.2rem; width: 150px;">Thêm vào giỏ</a>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="buyhny-now"> <a href="/them-gio-hang?productId=@Model.ID&quantity=1" data-tip="Add to Cart" class="action btn" style="height:60px">Buy Now </a></div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7 single-right-left pl-lg-4">
+                    <h3>
+                        @Model.Name
+                    </h3>
+                    <div class="caption">
+
+
+
+                        <h6>
+                            <span class="item_price">@(Model.Price.HasValue?Model.Price.Value.ToString("N0"): "Liên hệ")</span>
+
+                        </h6>
+                    </div>
+
+                    <div class="desc_single mb-4">
+                        <h5>Description:</h5>
+                        <p>
+                            @Model.Description
+                        </p>
+                    </div>
+                    <div class="description-apt d-grid mb-4">
+                        
+
+                        <div class="color-quality">
+                            <h5 class="sp_title">Services:</h5>
+                            <ul class="single_serv">
+                                <li>
+                                    Chính sách hoàn trả 
+                                </li>
+                                <li class="gap">
+                                    Thanh toán khi giao hàng
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--//row1-->
+        <div class="display-ad" style="margin: 8px auto; display: block; text-align:center;">
+
+            <!---728x90--->
+
+        </div>
+
+    </div>
+    <!--//ecommerce-single-->
+</section>
+<section class="w3l-ecommerce-main">
+    <!-- /products-->
+    <div class="ecom-contenthny py-5">
+        <div class="container py-lg-5">
+            <div class="display-ad" style="margin: 8px auto; display: block; text-align:center;">
+
+                <!---728x90--->
+
+            </div>
+
+            <h3 class="hny-title mb-0 text-center">Featured <span>Products</span></h3>
+            <p class="text-center">New Collections Shop With Us</p>
+            <!-- /row-->
+            <div class=" ecom-products-grids row mt-lg-5 mt-3 ">
+                <div class="ecom-products-grids row">
+                    @foreach (var item in relatedProducts)
+                    {
+                        var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ID;
+                        <div class="col-lg-2 col-6 product-incfhny mb-4">
+                            <div class="product-grid2 transmitv">
+                                <div class="product-image2">
+                                    <a href="@url"><img src="@item.Image" alt="@item.Name" /></a>
+
+                                    <ul class="social">
+                                        <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                        <li>
+                                            <a href="ecommerce.html" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="transmitv single-item">
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="transmitv_item" value="Women Maroon Top">
+                                            <input type="hidden" name="amount" value="899.99">
+                                            <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                                <a class="transmitv-cart ptransmitv-cart add-to-cart" href="/them-gio-hang?productId=@item.ID&quantity=1">Thêm vào giỏ</a>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ecommerce-single.html">
+                                        @item.Name
+                                    </h6>
+                                    <span class="price">@(item.Price.HasValue ? item.Price.Value.ToString("N0") : "Liên hệ")</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                
+            </div>
+            <!-- //row-->
+        </div>
+    </div>
+</section>
+

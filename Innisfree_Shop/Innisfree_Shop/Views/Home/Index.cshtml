@@ -1,0 +1,184 @@
+﻿@model  List<Model.ViewModel.ProductViewModel>
+ 
+    
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var slides = (List<Model.EF.Slide>)ViewBag.Slides;
+    var listNewProducts = (List<Model.EF.Product>)ViewBag.NewProducts;
+    var listFeatureProducts = (List<Model.EF.Product>)ViewBag.ListFeatureProducts;
+    
+}
+@section slide
+{
+    <section class="w3l-ecommerce-main-inn">
+        <!--/mag-content-->
+        <div class="ecomrhny-content-inf py-5">
+            <div class="container py-lg-5">
+                <div class="display-ad" style="margin: 8px auto; display: block; text-align:center;">
+
+                </div>
+
+                <!--/row1-->
+                <div class="ecommerce-grids row">
+                    <div class="ecommerce-left-hny col-lg-4">
+                        <!--/ecommerce-left-hny-->
+                        <aside>
+                            <div class="sider-bar">
+                                <div class="single-gd mb-5">
+
+                                    <h4>Search <span>here</span></h4>
+                                    <form action="tim-kiem" method="get" class="search-trans-form">
+                                        <input style="width: 990px; border: none; " type="text" value="Search" name="keyword" id="txtKeyword" placeholder="Search">
+                                        <button class="btn read-2">
+                                            <span class="fa fa-search"></span>
+                                        </button>
+
+                                    </form>
+                                </div>
+                                <!-- /Gallery-imgs -->
+
+                                <div class="single-gd mb-5">
+                                    <h4>Product <span>Categories</span></h4>
+                                    <ul class="list-group single">
+                                        @{ Html.RenderAction("ProductCategory", "Product");}
+                                    </ul>
+                                </div>
+
+                                <div class="single-gd mb-5 border-0">
+                                    <h4>Hot <span>Products</span></h4>
+
+                                    @*<div class="row special-sec1 mt-4">
+                                        @foreach (var item in listNewProducts)
+                                        {
+                                            var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ID;
+
+                                            <div class="col-4 img-deals">
+                                                <a href="@url"><img style="width:100%" src="@item.Image" alt="@item.Name" /></a>
+                                            </div>
+                                            <div class="col-8 img-deal1">
+                                                <h5 class="post-title">
+                                                    <a href="ecommerce-single.html">@item.Name</a>
+                                                </h5>
+
+                                                <a href="ecommerce-single.html" class="price-right"><span class="rupees">@(item.Price.HasValue ? item.Price.Value.ToString("N0") : "Liên hệ")</span></a>
+                                            </div>
+
+
+                                        }
+                                    </div>*@
+                                </div>
+
+                            </div>
+                        </aside>
+                        <!--//ecommerce-left-hny-->
+                    </div>
+                    <div class="ecommerce-right-hny col-lg-8">
+
+                        <!-- /row-->
+                        <div class="ecom-products-grids row">
+                            @foreach (var item in listNewProducts)
+                            {
+                                var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ID;
+                                <div class="col-lg-4 col-6 product-incfhny mb-4">
+                                    <div class="product-grid2 transmitv">
+                                        <div class="product-image2">
+                                            <a href="@url"><img src="@item.Image" alt="@item.Name" /></a>
+
+                                            <ul class="social">
+                                                <li><a href="@url" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                                <li>
+                                                    <a href="/them-gio-hang?productId=@item.ID&quantity=1" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                                </li>
+                                            </ul>
+                                            <div class="transmitv single-item">
+                                                <form action="/them-gio-hang?productId=@item.ID&quantity=1" method="post">
+
+                                                    <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                                        <a class="transmitv-cart ptransmitv-cart add-to-cart" href="/them-gio-hang?productId=@item.ID&quantity=1">Thêm vào giỏ</a>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="ecommerce-single.html">
+                                                @item.Name
+                                            </h6>
+                                            <span class="price">@(item.Price.HasValue ? item.Price.Value.ToString("N0") : "Liên hệ")</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                            <div class="clear"></div>
+                           
+                            </div>
+                            <!-- //row-->
+                            <!--/row2-->
+                            <!--//row22-->
+                        </div>
+                </div>
+                <!--//row1-->
+                <div class="display-ad" style="margin: 8px auto; display: block; text-align:center;">
+
+                    <!---728x90--->
+
+                </div>
+
+                <!--/pagination-->
+                <div class="pagination">
+                    @if (ViewBag.TotalPage > 1)
+                    {
+                        var pageDisplay = (int)ViewBag.MaxPage;
+                        int totalPage = (int)ViewBag.TotalPage;
+                        int currentPage = ((int)ViewBag.Page);
+
+                        // Create numeric links
+                        var startPageIndex = Math.Max(1, currentPage - pageDisplay / 2);
+                        var endPageIndex = Math.Min(totalPage, currentPage + pageDisplay / 2);
+
+                        var link = "/tin-tuc";
+                    <nav>
+                        <ul>
+                            @if (currentPage > ViewBag.First)
+                            {
+                                <li><a href="@link?page=@ViewBag.First" title="Trang đầu" class="first"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li>
+                                    <a href="@link?page=@ViewBag.Prev" title="Trang trước" class="prev"><i class="fa fa-angle-left"></i></a>
+                                </li>
+
+                            }
+                            @for (int i = startPageIndex; i <= endPageIndex; i++)
+                            {
+                                if (currentPage == i)
+                                {
+
+                                    <li> <a href="@link?page=@i" class="active" title="Trang @i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li><a href="@link?page=@i" title="Trang @i" class="pos">@i</a></li>
+                                }
+                            }
+                            @if (currentPage < totalPage)
+                            {
+                                <li><a href="@link?page=@ViewBag.Next" class="next" title="Trang sau"><i class="fa fa-angle-right"></i></a></li>
+                                <li> <a href="@link?page=@ViewBag.Last" class="last" title="Trang cuối"><i class="fa fa-angle-double-right"></i></a></li>
+                            }
+
+                            <li class="next"><a href="#page-number"><span class="fa fa-angle-double-right"></span></a></li>
+                        </ul>
+                        
+                    </nav>
+
+                    }
+                   
+                </div>
+                <!--//pagination-->
+
+            </div>
+        </div>
+        <!--//mag-content-->
+    </section>
+}

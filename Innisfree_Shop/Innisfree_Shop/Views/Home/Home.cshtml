@@ -1,0 +1,504 @@
+﻿@model List<Model.EF.ProductCategory>
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Innisfree</title>
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/style-starter.css">
+    <!-- Template CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+
+</head>
+<body>
+    <!--w3l-banner-slider-main-->
+    <section class="w3l-banner-slider-main">
+        <div class="top-header-content">
+            <header class="tophny-header">
+                <div class="container-fluid">
+                    <div class="top-right-strip row">
+                        <!--/left-->
+                        <!--/right-->
+                        @{Html.RenderAction("TopMenu", "Home"); }
+                        <!--//right-->
+
+                    </div>
+                </div>
+                <!--/nav-->
+                @{Html.RenderAction("HeaderCart", "Home");}
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid serarc-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            Innis<span class="lohny">F</span>ree
+                        </a>
+
+                        <div class="search-right">
+
+                           
+                              
+</div>
+                        <!--//search-right-->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon fa fa-bars"> </span>
+                        </button>
+
+                    </div>
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid serarc-fluid">
+                        @{Html.RenderAction("MainMenu", "Home"); }
+                    </div>
+                </nav>
+                <!--//nav-->
+            </header>
+
+            <div class="bannerhny-content">
+
+                <!--/banner-slider-->
+                <div class="content-baner-inf">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+
+
+                                <div class="container">
+
+
+                                    <div class="carousel-caption">
+                                        <h3>
+                                            Make-UP
+                                            <br>50% Off
+                                        </h3>
+                                        <a href="https://localhost:44377/Home/Index" class="shop-button btn">
+                                            Shop Now
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item item3">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3>
+                                            Chăm sóc
+                                            <br>phái đẹp
+                                        </h3>
+                                        <a href="https://localhost:44377/Home/Index" class="shop-button btn">
+                                            Shop Now
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!--//banner-slider-->
+                <!--//banner-slider-->
+                <div class="right-banner">
+
+
+                    <div style="align-items: center; display: flex; justify-content: space-around; height: 736px;">
+                        <img src="~/Content/image/banner3.jpg" />
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                </div>
+                >
+            </div>
+
+    </section>
+    <!-- //w3l-banner-slider-main -->
+    <section class="w3l-grids-hny-2">
+        <!-- /content-6-section -->
+        <div class="grids-hny-2-mian py-5">
+            <div class="container py-lg-5">
+
+                <h3 class="hny-title mb-0 text-center">Shop With <span>Us</span></h3>
+                <p class="mb-4 text-center">Handpicked Favourites just for you</p>
+                <div class="welcome-grids row mt-5">
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+                            <a href="https://localhost:44377/san-pham/make-up-1">
+
+                                <img style="width:100%;height:160px;" src="~/Content/image/3.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product
+                                </div>
+                            </a>
+                        </div>
+                        <h4><a href="https://localhost:44377/san-pham/make-up-1">Make Up</a></h4>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+
+                            <a href="https://localhost:44377/san-pham/duong-am-2">
+                                <img style="width:100%" src="~/Content/image/2.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h4>
+                            <a href="https://localhost:44377/san-pham/duong-am-2">
+                                Dưỡng ẩm
+                            </a>
+                        </h4>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+                            <a href="https://localhost:44377/san-pham/mat-na-3">
+
+                                <img style="width:100%;height:160px;" src="~/Content/image/1.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h4><a href="https://localhost:44377/san-pham/mat-na-3">Mặt nạ</a></h4>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+                            <a href="https://localhost:44377/san-pham/chong-nang-4">
+
+                                <img style="width:100%;height:160px;" src="~/Content/image/4.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h4><a href="https://localhost:44377/san-pham/chong-nang-4">Chống nắng</a></h4>
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+                            <a href="https://localhost:44377/san-pham/lam-sach-5">
+
+                                <img style="width:100%" src="~/Content/image/5.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h4>
+                            <a href="https://localhost:44377/san-pham/lam-sach-5">
+                                Làm sạch
+                            </a>
+                        </h4>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 welcome-image">
+                        <div class="boxhny13">
+                            <a href="https://localhost:44377/san-pham/bo-san-pham-6">
+
+                                <img style="width:100%;height:160px" src="~/Content/image/6.jpg" class="img-fluid" alt="" />
+                                <div class="boxhny-content">
+                                    <h3 class="title">Product</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <h4>
+                            <a href="https://localhost:44377/san-pham/bo-san-pham-6">
+                                Bộ sản phẩm
+                            </a>
+                        </h4>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //content-6-section -->
+
+    <section class="w3l-content-w-photo-6">
+        <!-- /specification-6-->
+        <div class="content-photo-6-mian py-5">
+            <div class="container py-lg-5">
+                <div class="align-photo-6-inf-cols row">
+
+                    <div class="photo-6-inf-right col-lg-6">
+                        <h3 class="hny-title text-left"> <span>Go to shop to find all Product</span></h3>
+
+                        <a href="https://localhost:44377/Home/Index" class="read-more btn">
+                            Shop Now
+                        </a>
+                    </div>
+                    <div class="photo-6-inf-left col-lg-6">
+                        <img src="assets/images/1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    
+    <section class="w3l-footer-22">
+        <!-- footer-22 -->
+        <div class="footer-hny py-5">
+            <div class="container py-lg-5">
+                <div class="text-txt row">
+                    <div class="left-side col-lg-4">
+                        <h3>
+                            <a class="logo-footer" href="index.html">
+                                Innis<span class="lohny">F</span>ree
+                            </a>
+                        </h3>
+
+                        <p>
+                            <h9>CÔNG TY TNHH AMOREPACIFIC VIỆT NAM</h9>
+                        </p>
+                        <p>
+                            <h9>GIẤY CNĐKDN: 0309984165 - Ngày cấp: 05/05/2010, được sửa đổi lần thứ 14 ngày 16/02/2017.</h9>
+                        </p>
+                        <p>
+                            <h11>Cơ quan cấp: Phòng Đăng kí kinh doanh - Sở Kế hoạch và Đầu tư TP.HCM</h11>
+                        </p>
+                        <p>
+                            <h11>Địa chỉ đăng ký kinh doanh: Lầu 4A, Toà nhà Vincom, 72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam.</h11>
+                        </p>
+                        <ul class="social-footerhny mt-lg-5 mt-4">
+
+                            <li>
+                                <a class="facebook" href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </li>
+                            <li>
+                                <a class="google" href="#"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                            </li>
+                            <li>
+                                <a class="instagram" href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-side col-lg-8 pl-lg-5">
+
+                        <div class="sub-columns">
+                            <div class="sub-one-left">
+                                <h6>Useful Links</h6>
+                                <div class="footer-hny-ul">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms and Conditions</a></li>
+                                        <li><a href="contact.html">Support</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="sub-two-right">
+                                <h6>Our Store</h6>
+                                <p class="mb-5">Đại học Bách Khoa HÀ NỘI</p>
+
+                                <h6>We accept:</h6>
+                                <ul>
+                                    <li>
+                                        <a class="pay-method" href="#">
+                                            <span class="fa fa-cc-visa"
+                                                  aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="pay-method" href="#">
+                                            <span class="fa fa-cc-mastercard"
+                                                  aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="pay-method" href="#">
+                                            <span class="fa fa-cc-paypal"
+                                                  aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="pay-method" href="#">
+                                            <span class="fa fa-cc-amex"
+                                                  aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                                <h6 style="margin-top: 50px;">Create By:</h6>
+                                <p style="color:white; font-size:1.4rem;font-weight:600;">Bùi Thị Linh :  20173544</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="below-section row">
+                    <div class="columns col-lg-6">
+                        <ul class="jst-link">
+                            <li><a href="#">Privacy Policy </a> </li>
+                            <li><a href="#">Term of Service</a></li>
+                            <li><a href="contact.html">Customer Care</a> </li>
+                        </ul>
+                    </div>
+                    <div class="columns col-lg-6 text-lg-right">
+                        <p>
+                            © 2020 Linh. All rights reserved. Design by Linh
+                            </a>
+                        </p>
+                    </div>
+                    <button onclick="topFunction()" id="movetop" title="Go to top">
+                        <span class="fa fa-angle-double-up"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- //titels-5 -->
+        <!-- move top -->
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </section>
+
+
+</body>
+
+</html>
+
+<script src="~/Content/assets/js/jquery-3.3.1.min.js"></script>
+<script src="~/Content/assets/js/jquery-2.1.4.min.js"></script>
+<!--/login-->
+<script>
+    $(document).ready(function () {
+        $(".button-log a").click(function () {
+            $(".overlay-login").fadeToggle(200);
+            $(this).toggleClass('btn-open').toggleClass('btn-close');
+        });
+    });
+    $('.overlay-close1').on('click', function () {
+        $(".overlay-login").fadeToggle(200);
+        $(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+        open = false;
+    });
+</script>
+<!--//login-->
+<script>
+    // optional
+    $('#customerhnyCarousel').carousel({
+        interval: 5000
+    });
+</script>
+<!-- cart-js -->
+<script src="~/Content/assets/js/minicart.js"></script>
+<script>
+    transmitv.render();
+
+    transmitv.cart.on('transmitv_checkout', function (evt) {
+        var items, len, i;
+
+        if (this.subtotal() > 0) {
+            items = this.items();
+
+            for (i = 0, len = items.length; i < len; i++) { }
+        }
+    });
+</script>
+<!-- //cart-js -->
+<!--pop-up-box-->
+<script src="~/Content/assets/js/jquery.magnific-popup.js"></script>
+<!--//pop-up-box-->
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+    });
+</script>
+<!--//search-bar-->
+<!-- disable body scroll which navbar is in active -->
+
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<script src="~/Content/assets/js/bootstrap.min.js"></script>
+
+
+
+
+

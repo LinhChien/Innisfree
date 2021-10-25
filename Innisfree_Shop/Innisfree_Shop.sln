@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Innisfree_Shop", "Innisfree_Shop\Innisfree_Shop.csproj", "{FE11A10A-0510-47DC-A90C-06F6CBDAF6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BCE78BE6-2EE6-4C0A-AF3B-0F91270E37BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{15E61D6A-9982-4281-9B84-5A1AC20189B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE11A10A-0510-47DC-A90C-06F6CBDAF6C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE11A10A-0510-47DC-A90C-06F6CBDAF6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE11A10A-0510-47DC-A90C-06F6CBDAF6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE11A10A-0510-47DC-A90C-06F6CBDAF6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE78BE6-2EE6-4C0A-AF3B-0F91270E37BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE78BE6-2EE6-4C0A-AF3B-0F91270E37BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE78BE6-2EE6-4C0A-AF3B-0F91270E37BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE78BE6-2EE6-4C0A-AF3B-0F91270E37BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E61D6A-9982-4281-9B84-5A1AC20189B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E61D6A-9982-4281-9B84-5A1AC20189B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E61D6A-9982-4281-9B84-5A1AC20189B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E61D6A-9982-4281-9B84-5A1AC20189B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC9AA310-B0AD-4372-806D-5BB0C8152D4F}
+	EndGlobalSection
+EndGlobal

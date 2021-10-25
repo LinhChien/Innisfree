@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="~/Assets/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Blank -->
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="~/Assets/admin/css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        @RenderPage("_Navigation.cshtml")
+
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">@RenderSection("header", required: true)</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                @if (TempData["AlertMessage"] != null)
+                {
+                    <div id="AlertBox" class="alert @TempData[" AlertType"] hide">
+                        @TempData["AlertMessage"]
+                    </div>
+                }
+                @RenderBody()
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- Core Scripts - Include with every page -->
+    <script src="~/Assets/admin/js/jquery-1.10.2.js"></script>
+    <script src="~/Assets/admin/js/bootstrap.min.js"></script>
+    <script src="~/Assets/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Assets/admin/js/controller/userController.js"></script>
+    <script src="~/Assets/admin/js/controller/productController.js"></script>
+    <!-- Page-Level Plugin Scripts - Blank -->
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="~/Assets/admin/js/plugins/ckfinder/ckfinder.js"></script>
+    <script src="/Assets/admin/js/plugins/ckeditor/ckeditor.js"></script>
+    <script src="~/Assets/admin/js/sb-admin.js  "></script>
+    <script src="~/Assets/admin/js/sb-admin-2.js"></script>
+    @RenderSection("jsFooter", required: false)
+    <!-- Page-Level Demo Scripts - Blank - Use for reference -->
+
+</body>
+
+</html>

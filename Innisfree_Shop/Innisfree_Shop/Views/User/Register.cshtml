@@ -1,0 +1,167 @@
+﻿@model Innisfree_Shop.Models.RegisterModel
+@using BotDetect.Web.Mvc;
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl"
+      rel="stylesheet" type="text/css" />
+@{ MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");}
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="w3l-ecommerce-main-inn">
+    <div class="ecomrhny-content-inf py-5">
+        <div class="container py-lg-5">
+            <div class="ecommerce-grids row">
+                @using (Html.BeginForm("Register", "User", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="ecommerce-right-hny col-lg-12">
+                        <div class="row ecomhny-topbar">
+                            <div class="col-6 ecomhny-result">
+                                <h2 class="ecomhny-result-count"> Đăng ký</h2>
+                            </div>
+
+                        </div>
+                        <div class="ecom-products-grids row">
+                            <div class="form-group ">
+                                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                                @if (ViewBag.Succcess != null)
+                                {
+                                    <div class="alert alert-success">@ViewBag.Succcess</div>
+                                }
+                            </div>
+
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.ConfirmPassword, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.Address, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            
+                            <div class="form-group col-12">
+                                @Html.LabelFor(model => model.Phone, new { @class = "control-label col-md-2" })
+                                <div class="col-md-7">
+                                    @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <div class="col-md-offset-2 col-md-10">
+                                    @Html.Captcha(registerCaptcha)
+                                    @Html.TextBox("CaptchaCode")
+                                </div>
+                            </div>
+                            
+                            <div class="form-group col-12">
+                                <div class="col-md-offset-2 col-md-7">
+                                    <input style="background-color: #ff7315; color: white;" type="submit" value="Đăng ký" class="btn btn-default" />
+                                    <a class="btn btn-facebook" href="/User/LoginFacebook" style="background-color: #4267b2; color: white;">
+                                        <i class="fa fa-facebook"></i>
+                                        Đăng nhập bằng facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-ecommerce-main-inn">
+    <div class="ecomrhny-content-inf py-5">
+        <div class="container py-lg-5">
+            <div class="ecommerce-grids row">
+                <div class="col-lg-3 col-6">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="/gioi-thieu/"> About Us</a></li>
+                        <li><a href="/lien-he/"> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h4>My account</h4>
+                    <ul>
+                        <li><a href="/dang-nhap/"> Sign In</a></li>
+                        <li><a href="/gio-hang/"> View Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><span> Linh:0347921934</span></li>
+
+                    </ul>
+                  </div>
+                 <div class="col-lg-3 col-6">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/linhbui.Linh.Katana/">
+                                    <img src="https://lh3.googleusercontent.com/kmBaFqdUogDi2ivfNIO0te9WkoBT7uQbpvIpadHZ6dCcPBozmcStbEA9yUTVsibZyC81oPXuahNQegJuIvke012AnBaI37CEcvpuNdRChWSbZ09steQry2KTVqD8ROGplnU0f8WG6Vffwsc-2_irdDUjSfrRkjRpZsCx-3nmYFYWupXbX8DzMSMwhUZkXGcsnL50DsitxHDx4OlrNNUzJmPBj9juC40X2Szo84h0UzCmo87s5GGSFiL_Av41ZBsUZGQytAwAbjED-JLFtCl7AbsCP_ugmhvcKAVTGf0kDVAeMOvMXvNLsWcatTHRnBv93pdK-ohTR1R0oMW8JIbO5YOY-413RPXWTr6qqFgy3ys2ktprAl8sTYalGh_LI8GK29f11Clq_qw8f_UlCtmOzpDiDRyZz5unDdZMBQg35vWfh9AeJRHtAbcPbd9-3iwy6kSK42oZguEOUAQoOyUF3jodSzUkGOW_3nFavKdFtNdrT1jd9fMj7D-Kok8THE6h4lZAvA2T7D0VRM8Lp5782eCrUadb43dgzhC7J1soKr63YsHU7WvmyLj-_uUjeu0ny0pgd9ewTEVuLGvpKeRT4Yj2AA4C1sh4ldNpeRiyj06FMizyOkdUPdraAtESZEWEUAs_ymU69_6Qy0i6FPYXKVH5q61dsocTX3t4394eFvE7rsnBDlcP1jMaJ_8J=s32-no?authuser=0" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="copy_right">
+            <p>&copy;Innisfree.All rights reserved | Design by <a href="https://www.facebook.com/linhbui.Linh.Katana/"> Bùi Thị Linh</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

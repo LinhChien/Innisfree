@@ -1,0 +1,56 @@
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Model.dll.config
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Model.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Model.pdb
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Common.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\EntityFramework.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\PagedList.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Common.pdb
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\EntityFramework.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\PagedList.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\dell\source\repos\Innisfree_Shop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Innisfree_Shop\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\dell\source\repos\Innisfree_Shop\Model\obj\Debug\Model.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\obj\Debug\Model.pdb
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Antlr3.Runtime.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Iesi.Collections.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\NHibernate.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.EagerFetching.dll
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Antlr3.Runtime.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Iesi.Collections.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\NHibernate.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.xml
+C:\Users\dell\source\repos\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Model.dll.config
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Model.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Model.pdb
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Antlr3.Runtime.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Common.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\EntityFramework.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Iesi.Collections.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\NHibernate.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\PagedList.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\PagedList.Mvc.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.EagerFetching.dll
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Common.pdb
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Antlr3.Runtime.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\EntityFramework.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Iesi.Collections.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\NHibernate.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\PagedList.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\PagedList.Mvc.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.xml
+D:\đồ án 1\Innisfree_Shop\Model\bin\Debug\Remotion.Linq.EagerFetching.xml
+D:\đồ án 1\Innisfree_Shop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\đồ án 1\Innisfree_Shop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\đồ án 1\Innisfree_Shop\Model\obj\Debug\Model.csproj.CopyComplete
+D:\đồ án 1\Innisfree_Shop\Model\obj\Debug\Model.dll
+D:\đồ án 1\Innisfree_Shop\Model\obj\Debug\Model.pdb

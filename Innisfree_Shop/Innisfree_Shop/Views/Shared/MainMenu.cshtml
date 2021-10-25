@@ -1,0 +1,12 @@
+﻿@model List<Model.EF.Menu>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            @foreach (var item in Model)
+            {
+                <li class="nav-item"><a class="nav-link" href="@item.Link" target="@item.Target ">@item.Text</a></li>
+            }
+            <div class="clear"></div>
+        </ul>
+    </div>
+
+       
